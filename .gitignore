@@ -1,1 +1,5 @@
+# Generic
 node_modules
+
+# Bun
+bun.completion.bash
