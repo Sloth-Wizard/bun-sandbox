@@ -1,0 +1,18 @@
+{
+  "name": "bun-sandbox",
+  "version": "0.0.1",
+  "description": "Bun sandbox",
+  "scripts": {
+    "watch": "bun --watch ./src/server.ts",
+    "dev": "bun ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sloth-Wizard/bun-sandbox.git"
+  },
+  "devDependencies": {
+    "@types/node": "~18.15.11",
+    "bun-types": "^1.0.1",
+    "dotenv": "^16.0.3"
+  }
+}

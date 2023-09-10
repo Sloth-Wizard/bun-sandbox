@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["es2021", "dom"],
+    "outDir": "./lib",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "src",
+    "types": ["bun-types"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
