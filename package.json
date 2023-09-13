@@ -1,6 +1,6 @@
 {
   "name": "bun-sandbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bun sandbox",
   "scripts": {
     "watch": "bun --watch ./src/server.ts",
