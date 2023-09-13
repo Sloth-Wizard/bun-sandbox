@@ -1,0 +1,15 @@
+[package]
+name = "bun-jwt"
+version = "0.0.1"
+authors = ["Sloth-Wizard <alexis.abeloos@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+serde = "1.0.136"
+serde_json = "1.0.79"
+jsonwebtoken = {version = "8.1.0", default-features = true }
+
+[lib]
+path = "src/jwt.rs"
+name = "bunjwt"
+crate-type = ["cdylib"]

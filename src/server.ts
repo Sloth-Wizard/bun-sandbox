@@ -2,6 +2,7 @@ import type {BRsp} from "./types";
 import type {BunFile} from "bun";
 
 import process from "process";
+import {dlopen, FFIType, suffix} from "bun:ffi";
 
 const port = 9898;
 const baseUrl = `http://localhost:${port}`;
@@ -106,6 +107,19 @@ const server = Bun.serve({
                     type,
                     content: completeStream,
                 }};
+                break;
+            }
+            case "/rs": {
+                const path = `libadd.${suffix}`;
+
+                const lib = dlopen(path, {
+                    gen_jwt: {
+                        returns: [FFIType.void, FFIType.char],
+                    },
+                });
+
+                lib.symbols.gen_jwt();
+
                 break;
             }
             default:
